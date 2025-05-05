@@ -18,8 +18,6 @@ import InputBase from '@mui/material/InputBase';
 import SearchIcon from '@mui/icons-material/Search';
 import Link from 'next/link';
 
-
-
 const pages = [
 	{ name: 'Top', path: '/' },
 	{ name: 'Search', path: '/search' },

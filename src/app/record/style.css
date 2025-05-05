@@ -1,0 +1,12 @@
+@reference "../globals.css";
+.title{
+	@apply text-4xl font-bold mt-8 ml-15 inline-block;
+}
+
+.addButton{
+	@apply p-10;
+}
+
+.searchBar {
+	@apply border-2 ml-15 mt-8 w-250;
+}
