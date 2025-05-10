@@ -22,3 +22,31 @@
 .listBox {
 	@apply mt-5;
 }
+
+.recInfo {
+	@apply ml-6;
+}
+
+.recBlock {
+	@apply flex py-2;
+}
+
+.bookTitle {
+	@apply font-bold text-3xl hover:underline cursor-pointer;
+}
+
+.bookAuthor {
+	@apply mt-1;
+}
+
+.quote {
+	@apply text-2xl mt-8 italic;
+}
+
+.coverImg {
+	@apply cursor-pointer;
+}
+
+.date {
+	@apply ml-auto;
+}
