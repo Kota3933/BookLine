@@ -110,7 +110,7 @@ function Header() {
               textDecoration: 'none',
             }}
           >
-            BookList
+            BookLine
           </Typography>
 		  
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>

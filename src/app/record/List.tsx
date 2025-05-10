@@ -1,7 +1,9 @@
 export default function List(){
 	return (
 		<main>
-			<p>りすと</p>
+			<div className="listBox">
+				<p>りすと</p>
+			</div>
 		</main>
 	)
 }

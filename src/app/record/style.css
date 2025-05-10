@@ -1,12 +1,24 @@
 @reference "../globals.css";
 .title{
-	@apply text-4xl font-bold mt-8 ml-15 inline-block;
+	@apply text-4xl font-bold;
 }
 
 .addButton{
-	@apply p-10;
+	
 }
 
 .searchBar {
-	@apply border-2 ml-15 mt-8 w-250;
+	@apply border-2 w-full mt-2;
+}
+
+.topBox {
+	@apply flex justify-between py-3;
+}
+
+.outLine {
+	@apply mx-40 mt-10;
+}
+
+.listBox {
+	@apply mt-5;
 }
