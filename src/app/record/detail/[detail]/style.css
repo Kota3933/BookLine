@@ -1,0 +1,33 @@
+@reference "../../../globals.css";
+
+.container {
+	@apply mx-40 mt-10 flex;
+}
+
+.recInfo {
+	@apply ml-10 w-auto;
+}
+
+.titleBox {
+	@apply flex ;
+}
+
+.bookTitle {
+	@apply font-bold text-5xl;
+}
+
+.quoteBox {
+	@apply mt-6 w-max;
+}
+
+.quote {
+	@apply text-2xl italic;
+}
+
+.impBox {
+	@apply mt-10 mr-20;
+}
+
+
+
+

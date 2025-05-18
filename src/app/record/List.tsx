@@ -1,6 +1,8 @@
 import { Box } from "@mui/material"
 import Image from "next/image"
+import Link from "next/link";
 
+//サンプルデータ
 const bookData = [
 	{
 		"id": 1,
@@ -41,6 +43,9 @@ const recData = [
 	}
 ]
 
+
+const link = "/record/detail/";
+
 export default function List(){
 	return (
 		<main>
@@ -52,23 +57,30 @@ export default function List(){
 					bgcolor: '#ffffff',
 					p: 3
 				}}>
-					<Box sx={{
-					width: 1,
-					height: 1/2,
-					borderRadius: 4,
-					border: 1,
-					p: 2
-					}}>
-						<div className="recBlock">
-							<Image src="/NorwayForest_cover.jpg" width={117} height={166} alt="NorwayForestCover" className="coverImg"/>
-							<div className="recInfo">
-								<p className="bookTitle">{bookData.title}</p>
-								<p className="bookAuthor">{bookData.author}</p>
-								<p className="quote">{recData.quote}</p>
+					{recData.map((rec, index) => (
+						<Box key={index} sx={{
+						width: 1,
+						height: 1/2,
+						borderRadius: 4,
+						border: 1,
+						mb: 2,
+						p: 2
+						}}>
+							<div className="recBlock">
+								<Link href={link+(index+1).toString()}>
+									<Image src={bookData[index].img} width={117} height={166} alt="bookCover" className="coverImg"/>
+								</Link>
+								<div className="recInfo">
+									<Link href={link+(index+1).toString()}>
+										<p className="bookTitle">{bookData[index].title}</p>
+									</Link>
+									<p className="bookAuthor">{bookData[index].author}</p>
+									<p className="quote">「{rec.quote}」</p>
+								</div>
+								<p className="date">{rec.date}</p>
 							</div>
-							<p className="date">{recData.date}</p>
-						</div>
-					</Box>
+						</Box>
+					))}
 				</Box>
 			</div>
 		</main>
