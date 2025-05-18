@@ -1,0 +1,52 @@
+@reference "../globals.css";
+.title{
+	@apply text-4xl font-bold;
+}
+
+.addButton{
+	
+}
+
+.searchBar {
+	@apply border-2 w-full mt-2;
+}
+
+.topBox {
+	@apply flex justify-between py-3;
+}
+
+.outLine {
+	@apply mx-40 mt-10;
+}
+
+.listBox {
+	@apply mt-5;
+}
+
+.recInfo {
+	@apply ml-6;
+}
+
+.recBlock {
+	@apply flex py-2;
+}
+
+.bookTitle {
+	@apply font-bold text-3xl hover:underline cursor-pointer;
+}
+
+.bookAuthor {
+	@apply mt-1;
+}
+
+.quote {
+	@apply text-2xl mt-8 italic;
+}
+
+.coverImg {
+	@apply cursor-pointer;
+}
+
+.date {
+	@apply ml-auto;
+}
